@@ -1,8 +1,10 @@
 1.CSS : CSS stands for Cascading Style Sheet and 
         this is a computer language for laying out and structuring webpages.
-      #id - Name
-      class - Name
-      element - <p></p>  select all <p> element
+      #id selector - Name
+      class selector - Name
+      element selector - <p></p>  select all <p> element
+      grouping selector - h1, h2, h3 
+        styles multiple element at once.
 
 
 2.Student Registration Form:
