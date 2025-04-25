@@ -1,0 +1,162 @@
+
+1)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-form {
+      background: #e8e5e5;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      height: 32vh;
+    }
+
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    .username,
+    .password{
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #622e2e;
+      border-radius: 6px;
+    }
+
+    .submit {
+      width: 100%;
+      padding: 10px;
+      background: #121212;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+
+  </style>
+<body>
+
+  <form class="login-form" action="/submit-login" method="POST">
+    <h2>Login</h2>
+    <label for="username">Username</label>
+      <input type="text" class="username" name="username" minlength="5" required>
+
+    <label for="password">Password</label>
+      <input type="password" class="password" name="password" minlength="9" required>
+
+    <input type="submit" value="Login" class="submit">
+  </form>
+
+  
+</body>
+</html>
+
+
+
+2)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f9f9f9;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #3498db;
+    color: white;
+  }
+
+  tfoot td {
+    font-weight: bold;
+    background-color: #ecf0f1;
+  }
+</style>
+
+<body>
+  
+  <h2>Product List</h2>
+
+  <table id="productTable">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Price ($)</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Television</td>
+        <td>1299</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Air Conditioner</td>
+        <td>1750</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Washing Machine</td>
+        <td>1095</td>
+        <td>1</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Total Price</td>
+        <td id="totalPrice">$0.00</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
