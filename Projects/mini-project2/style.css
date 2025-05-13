@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
+.switch input { display: none; }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  transition: .4s;
+  border-radius: 20px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.mode-label {
+  font-size: 14px;
+}
+
+/* Quiz Box */
+.quiz-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.options-container button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.options-container button:hover {
+  background-color: #ddd;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Review Section */
+#review-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+body.dark-mode .quiz-box,
+body.dark-mode #review-container {
+  background-color: #1e1e1e;
+  color: white;
+}
+body.dark-mode .options-container button {
+  background-color: #333;
+  border-color: #444;
+  color: white;
+}
+body.dark-mode .options-container button:hover {
+  background-color: #444;
+}
+
+
+.option-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.option-btn:hover {
+  background-color: #ddd;
+}
+.option-btn.selected {
+  background-color: #cce5ff;
+  border-color: #66afe9;
+}
+
+/* Dark Mode Option Styling */
+body.dark-mode .option-btn {
+  background-color: #333;
+  border-color: #444;
+  color: white;
+}
+body.dark-mode .option-btn:hover {
+  background-color: #444;
+}
+body.dark-mode .option-btn.selected {
+  background-color: #0056b3;
+  border-color: #007bff;
+}
+
+/* Review Page */
+.review-question {
+  margin-bottom: 20px;
+}
+.correct-answer {
+  color: green;
+  font-weight: bold;
+}
