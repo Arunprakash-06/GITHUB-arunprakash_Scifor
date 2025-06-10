@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #23348c;
+    margin: 0;
+}
+
+.Border-div-rad {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border: 20px solid transparent;
+}
